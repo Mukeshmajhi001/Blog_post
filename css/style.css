@@ -1,0 +1,375 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, system-ui, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    min-height: 100vh;
+    background: linear-gradient(145deg, #e9f7f5 0%, #d3eee8 100%);
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12px 12px 0 12px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles - Combined */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Header Card */
+.main {
+    width: 100%;
+    background-color: #d6f5f0;
+    border-radius: 32px;
+    padding: 0.6rem 1.2rem 0.6rem 1rem;
+    /* margin: 0 10px 10px 10px; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.2rem;
+    box-shadow: 0 12px 28px -8px rgba(1, 58, 67, 0.25),
+                0 4px 12px rgba(0, 80, 90, 0.15);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Logo Styles - Combined */
+.logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0, 60, 70, 0.3);
+    transition: transform 0.25s ease;
+    background-color: #b0e0db;  /* visible if image missing */
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo:hover {
+    transform: scale(1.02) rotate(1deg);
+}
+
+/* Brand Name */
+.name {
+    font-size: 2.1rem;
+    color: #05313b;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Brush Script MT', 'Segoe Script', 'Lucida Handwriting', cursive, sans-serif;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.7);
+    line-height: 1.2;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Button Styles */
+#button1 {
+    margin-left: auto;
+}
+
+.button {
+    padding: 10px 24px;
+    color: white;
+    background-color: #0c6b7e;
+    text-decoration: none;
+    border-radius: 60px;
+    font-size: 1.05rem;
+    font-weight: 550;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 14px -8px #05313b80, 0 2px 4px #c0fcf0 inset;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.button:hover {
+    background-color: #024e5e;
+    box-shadow: 0 10px 18px -6px #02262e;
+    transform: translateY(-2px);
+    border-color: white;
+}
+
+.button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px -2px #001f26;
+}
+
+.button:last-child {
+    background-color: #1f8a9c;
+}
+
+.button:last-child:hover {
+    background-color: #086277;
+}
+
+/* Main Content */
+main {
+    background: #fff;
+    min-height: 400px;
+    padding: 20px 0;
+}
+
+/* Blog Posts */
+.blog-posts {
+    margin-top: 30px;
+}
+
+.post {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post h3 {
+    margin-bottom: 10px;
+}
+
+.post h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post h3 a:hover {
+    color: #007bff;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.post-excerpt {
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.read-more:hover {
+    background: #0056b3;
+}
+
+/* Single Post */
+.single-post {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.post-content {
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+.back-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Post Images */
+.post-image {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.featured-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Single Post Image */
+.featured-image-container {
+    margin: 20px 0;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.post-featured-image {
+    max-width: 100%;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: #721c24;
+    background: #f8d7da;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design - Combined */
+@media (min-width: 768px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-image-container {
+        padding: 10px;
+    }
+    
+    .post-featured-image {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 650px) {
+    .main {
+        border-radius: 40px;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+    }
+    #button1 {
+        margin-left: 0;
+    }
+    .name {
+        font-size: 2rem;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+    .name {
+        margin-left: 0;
+    }
+    .button {
+        width: 100%;
+        white-space: normal;
+    }
+}
