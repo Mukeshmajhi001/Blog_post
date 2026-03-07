@@ -37,7 +37,7 @@ $result = $conn->query($sql);
                 
                 <div class="post-excerpt">
                     <?php 
-                    $excerpt = substr(strip_tags($post['content']), 0, 200);
+                    $excerpt = substr(strip_tags($post['content']), 0, 400);
                     echo $excerpt . '...';
                     ?>
                 </div>
