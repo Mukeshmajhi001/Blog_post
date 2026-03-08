@@ -17,8 +17,8 @@
         <h1 class="name">𝓜𝓤𝓑𝓘𝓚</h1>
 
         <!-- navigation buttons with PHP links -->
-        <a class="button" id="button1" href="index.php" target="_blank" rel="noopener">home</a>
-        <a class="button" href="admin/login.php" target="_blank" rel="noopener">Admin Login</a>
+        <a class="button" id="button1" href="index.php"  rel="noopener">home</a>
+        <a class="button" href="admin/login.php" rel="noopener">Admin Login</a>
       
     </div>
 

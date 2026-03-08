@@ -678,7 +678,7 @@ $result = $conn->query($sql);
 
         <!-- dynamic admin links styled as buttons, preserving original functionality -->
         <a class="button" id="button1" href="add-post.php"><i class="fas fa-plus-circle"></i> New Post</a>
-        <a class="button" href="../index.php" target="_blank"><i class="fas fa-external-link-alt"></i> View Site</a>
+        <a class="button" href="../index.php" ><i class="fas fa-external-link-alt"></i> View Site</a>
         <a class="button" href="logout.php" style="background-color:#dc3545;"><i class="fas fa-sign-out-alt"></i> Logout</a>
     </div>
 
@@ -814,7 +814,7 @@ $result = $conn->query($sql);
                                         <div class="action-buttons">
                                             <a href="../single-post.php?id=<?php echo $post['id']; ?>"
                                                 class="action-btn btn-view"
-                                                target="_blank"
+                                                 
                                                 title="View Post">
                                                 <i class="fas fa-eye"></i>
                                             </a>
