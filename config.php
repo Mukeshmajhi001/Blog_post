@@ -7,7 +7,7 @@ define('DB_NAME', 'blog_db');
 
 // Site configuration
 define('SITE_TITLE', 'MUBIK');
-define('SITE_URL', 'http://localhost/blog-website/');
+define('SITE_URL', 'http://localhost/final/');
 
 // Security keys (change these to random strings)
 define('SECRET_KEY', 'your-secret-key-here-change-this');

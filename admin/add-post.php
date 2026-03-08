@@ -17,7 +17,7 @@ $error = '';
 // Image upload settings
 $target_dir = "../uploads/posts/";
 $allowed_types = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
-$max_size = 5 * 1024 * 1024; // 5MB
+$max_size = 10 * 1024 * 1024; // 10MB
 
 // Create upload directory if not exists
 if (!file_exists($target_dir)) {
@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
             // Validate file size
             elseif ($file_size > $max_size) {
-                $error = 'Image size should be less than 5MB';
+                $error = 'Image size should be less than 10MB';
             }
             else {
                 // Generate unique filename
@@ -95,103 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New Post with Image</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        .admin-form {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 30px;
-            background: #f9f9f9;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .form-title {
-            margin-bottom: 30px;
-            color: #333;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        }
-        .form-group input[type="text"],
-        .form-group input[type="file"],
-        .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 3px;
-            font-size: 16px;
-        }
-        .form-group textarea {
-            font-family: Arial, sans-serif;
-        }
-        .image-preview {
-            max-width: 300px;
-            max-height: 200px;
-            margin-top: 10px;
-            border: 1px solid #ddd;
-            padding: 5px;
-            display: none;
-        }
-        .image-preview img {
-            width: 100%;
-            height: auto;
-        }
-        .file-info {
-            font-size: 12px;
-            color: #666;
-            margin-top: 5px;
-        }
-        .submit-btn {
-            background: #28a745;
-            color: white;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 3px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .submit-btn:hover {
-            background: #218838;
-        }
-        .cancel-btn {
-            background: #6c757d;
-            color: white;
-            padding: 12px 30px;
-            border: none;
-            border-radius: 3px;
-            font-size: 16px;
-            text-decoration: none;
-            display: inline-block;
-            margin-left: 10px;
-        }
-        .cancel-btn:hover {
-            background: #545b62;
-        }
-        .message {
-            padding: 10px;
-            border-radius: 3px;
-            margin-bottom: 20px;
-        }
-        .success {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-        .error {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-        .required:after {
-            content: " *";
-            color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="css/add_post_style.css">
 </head>
 <body>
     <div class="container">
@@ -217,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="form-group">
                     <label for="image">Featured Image:</label>
                     <input type="file" id="image" name="image" accept="image/*" onchange="previewImage(this)">
-                    <div class="file-info">Allowed: JPG, PNG, GIF, WEBP (Max: 5MB)</div>
+                    <div class="file-info">Allowed: JPG, PNG, GIF, WEBP (Max: 10MB)</div>
                     <div id="imagePreview" class="image-preview">
                         <img src="" alt="Image Preview">
                     </div>
